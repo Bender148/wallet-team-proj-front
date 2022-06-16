@@ -11,7 +11,7 @@ const HomeTabeMobile = () => {
         <table className={s.item}>
           <tbody>
             <tr>
-              <th>У Вас еще нет транзакций</th>
+              <th>У Вас ще немає транзакцій</th>
             </tr>
           </tbody>
         </table>
@@ -36,15 +36,15 @@ const HomeTabeMobile = () => {
                 <td>{text}</td>
               </tr>
               <tr>
-                <th>Категория</th>
+                <th>Категорія</th>
                 <td>{item.category}</td>
               </tr>
               <tr>
-                <th>Комментарий</th>
+                <th>Коментар</th>
                 <td>{item.comment}</td>
               </tr>
               <tr>
-                <th>Сумма</th>
+                <th>Сума</th>
                 <td className={colorTxt}>{normalizeNum(item.sum)}</td>
               </tr>
               <tr>

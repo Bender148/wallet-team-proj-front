@@ -2,6 +2,7 @@ import React, { useEffect, lazy, Suspense } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
+import { IntlProvider } from 'react-intl'
 
 import { sessionOperations } from './redux/session'
 import { globalSelectors } from './redux/globall'
@@ -23,7 +24,7 @@ function App() {
   }, [dispatch])
 
   return (
-    <>
+    <IntlProvider message={{}} locale='en' defaultLocale='en'>
       <Suspense fallback={<Loader />}>
         <Switch>
           <Route path="/login">{WithAuthRedirect(<LoginPage />)}</Route>
@@ -41,7 +42,7 @@ function App() {
       {isLoading && <Loader />}
 
       <ToastContainer />
-    </>
+    </IntlProvider>
   )
 }
 

@@ -26,15 +26,15 @@ const PasswordStrength = ({ password }) => {
   const createPasswordLabel = () => {
     switch (testResult.score) {
       case 0:
-        return 'Используйте сложный пароль'
+        return 'Використайте складніший пароль'
       case 1:
         return 'Легкий пароль'
       case 2:
-        return 'Нормальный пароль'
+        return 'Нормальний пароль'
       case 3:
         return 'Хороший пароль'
       case 4:
-        return 'Безопасный пароль!'
+        return 'Безпечний пароль!'
       default:
         return ''
     }

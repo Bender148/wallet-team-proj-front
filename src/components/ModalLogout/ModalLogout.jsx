@@ -9,18 +9,18 @@ export default function ModalLogout() {
   return (
     <>
       <div className={s.modalContainer}>
-        <p className={s.text}>Вы уверены?</p>
+        <p className={s.text}>Ви впевнені?</p>
         <div className={s.buttonWrapper}>
           <Button
             onClick={() => dispatch(logOut())}
-            title="Выйти"
+            title="Вийти"
             type="button"
             className={s.button}
           />
           <Button
             onClick={() => dispatch(closeModalLogout())}
             typeButton="secondary"
-            title="Отмена"
+            title="Відміна"
             type="button"
             className={s.button}
           />

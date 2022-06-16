@@ -81,14 +81,14 @@ const LoginForm = () => {
             </label>
 
             <Button
-              title="Вход"
+              title="Вхід"
               type="submit"
               onSubmit={onSubmit}
               className={s.submitBtn}
             />
 
             <Button
-              title="Регистрация"
+              title="Реєстрація"
               type="button"
               typeButton="secondary"
               onClick={onRegistrationBtn}

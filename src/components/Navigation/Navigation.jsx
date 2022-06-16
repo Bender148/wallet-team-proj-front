@@ -19,7 +19,7 @@ const Navigation = () => {
               <use href={`${sprite}#icon-home`}></use>
             </svg>
           </div>
-          <span className={s.navText}>Главная</span>
+          <span className={s.navText}>Головна</span>
         </NavLink>
       </li>
       <li className={s.navItem}>

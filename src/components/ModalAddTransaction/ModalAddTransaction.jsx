@@ -126,7 +126,7 @@ function ModalAddTransaction() {
         </button>
       </div>
 
-      <h2 className={styles.title}>Добавить транзакцию</h2>
+      <h2 className={styles.title}>Додати транзакцію</h2>
 
       <Formik
         initialValues={initialValues}
@@ -136,7 +136,7 @@ function ModalAddTransaction() {
         {({ setFieldValue, values }) => (
           <Form className={styles.form}>
             <div className={styles.transTypeContainer}>
-              <span className={incomeActiveTrigger()}>Доход</span>
+              <span className={incomeActiveTrigger()}>Дохід</span>
 
               <div className={styles.switchToggleContainer}>
                 <label
@@ -159,7 +159,7 @@ function ModalAddTransaction() {
                 id="transType"
                 defaultChecked
               />
-              <span className={spendingActiveTrigger()}>Расход</span>
+              <span className={spendingActiveTrigger()}>Витрати</span>
             </div>
 
             {transactionType === 'spending' && (
@@ -173,7 +173,7 @@ function ModalAddTransaction() {
                       {selectedCategory.name}
                     </p>
                   ) : (
-                    <p>Выберите категорию</p>
+                    <p>Виберіть категорію</p>
                   )}
                 </div>
 
@@ -208,7 +208,7 @@ function ModalAddTransaction() {
                       {selectedCategory.name}
                     </p>
                   ) : (
-                    <p>Выберите категорию</p>
+                    <p>Виберіть категорію</p>
                   )}
                 </div>
 
@@ -276,20 +276,20 @@ function ModalAddTransaction() {
                 as="textarea"
                 name="comment"
                 className={styles.commentField}
-                placeholder="Комментарий"
+                placeholder="Коментар"
               />
             </div>
 
             <div className={styles.buttonsContainer}>
               <Button
                 className={styles.submitButton}
-                title="Добавить"
+                title="Додати"
                 type="submit"
               />
 
               <Button
                 className={styles.cancelButton}
-                title="Отмена"
+                title="Відмінити"
                 type="button"
                 typeButton="secondary"
                 onClick={() =>

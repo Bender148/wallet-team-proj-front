@@ -1,3 +1,4 @@
+import { IntlProvider } from 'react-intl'
 import Media from 'react-media'
 import { mediaQueries } from '../../utils'
 import { NavLink } from 'react-router-dom'
@@ -12,7 +13,7 @@ export default function Header() {
   const { name } = useSelector(getUser)
 
   return (
-    <>
+    <IntlProvider message={{}} locale='en' defaultLocale='en'>
       <header className={s.header}>
         <div className={s.mainContainer}>
           <div className={s.logoContainer}>
@@ -44,7 +45,7 @@ export default function Header() {
               <Media queries={mediaQueries}>
                 {(matches) =>
                   (matches.tablet || matches.desktop) && (
-                    <p className={s.exit}>Выйти</p>
+                    <p className={s.exit}>Вийти</p>
                   )
                 }
               </Media>
@@ -52,6 +53,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-    </>
+    </IntlProvider>
   )
 }

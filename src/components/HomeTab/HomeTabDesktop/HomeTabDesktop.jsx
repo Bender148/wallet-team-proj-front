@@ -14,19 +14,19 @@ const HomeTabDesktop = () => {
           <tr className={s.tr}>
             <th className={s.border__start}>Дата</th>
             <th>Тип</th>
-            <th>Категория</th>
-            <th>Комментарий</th>
-            <th>Сумма</th>
+            <th>Категорія</th>
+            <th>Коментар</th>
+            <th>Сума</th>
             <th>Баланс</th>
           </tr>
         </thead>
         <tbody className={s.tbody}>
           {transactions.length === 0 && (
             <tr key={1} className={s.tr}>
-              <td>Дата транзакции</td>
+              <td>Дата транзакції</td>
               <td>+</td>
-              <td>Категория</td>
-              <td>Комментарий</td>
+              <td>Категорія</td>
+              <td>Коментар</td>
               <td>0</td>
               <td>0</td>
             </tr>

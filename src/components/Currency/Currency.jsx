@@ -17,7 +17,7 @@ const Currency = () => {
         setStatus(Status.RESOLVED)
       })
       .catch((error) => {
-        setError('Что-то пошло не так. Проверьте позднее.')
+        setError('Щось пішло не так. Перевірте пізніше.')
         setStatus(Status.REJECTED)
       })
   }, [])
@@ -26,8 +26,8 @@ const Currency = () => {
     <div className={s.card}>
       <ul className={s.header}>
         <li>Валюта</li>
-        <li>Покупка</li>
-        <li>Продажа</li>
+        <li>Купівля</li>
+        <li>Продаж</li>
       </ul>
       <div
         className={`${s.body} ${

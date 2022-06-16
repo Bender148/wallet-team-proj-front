@@ -74,7 +74,7 @@ function Table({ statistics, setStartDate, setEndDate }) {
 
       <ul className={s.menu}>
         <li className={s.item} onClick={() => openMonthMenu()}>
-          {selectedMonth ? selectedMonth.name : 'Месяц'}
+          {selectedMonth ? selectedMonth.name : 'Місяць'}
           <svg className={s.itemIcon}>
             <use href={`${sprite}#icon-arrow`} x={10}></use>
           </svg>
@@ -91,7 +91,7 @@ function Table({ statistics, setStartDate, setEndDate }) {
               ))}
               {selectedMonth && (
                 <li className={s.subItem} onClick={(e) => removeMonth(e)}>
-                  Очистить
+                  Очистити
                 </li>
               )}
             </ul>
@@ -99,7 +99,7 @@ function Table({ statistics, setStartDate, setEndDate }) {
         </li>
 
         <li className={s.item} onClick={() => openYearMenu()}>
-          {selectedYear ?? 'Год'}
+          {selectedYear ?? 'Рік'}
           <svg className={s.itemIcon}>
             <use href={`${sprite}#icon-arrow`} x={10}></use>
           </svg>
@@ -116,7 +116,7 @@ function Table({ statistics, setStartDate, setEndDate }) {
               ))}
               {selectedYear && !selectedMonth && (
                 <li className={s.subItem} onClick={(e) => removeYear(e)}>
-                  Очистить
+                  Очистити
                 </li>
               )}
             </ul>
@@ -125,8 +125,8 @@ function Table({ statistics, setStartDate, setEndDate }) {
       </ul>
 
       <div className={s.tableHead}>
-        <p>Категория</p>
-        <p>Сумма</p>
+        <p>Категорія</p>
+        <p>Сума</p>
       </div>
 
       {statistics.data.length !== 0 ? (
@@ -152,12 +152,12 @@ function Table({ statistics, setStartDate, setEndDate }) {
         </ul>
       ) : (
         <div className={s.messEmpty}>
-          Трансакции за данный период отсутствуют
+          Транзакцій за данний період відсутні
         </div>
       )}
 
       <div className={`${s.result} ${s.expenses}`}>
-        Расходы:
+        Витрати:
         {statistics.length !== 0 ? (
           <span className={s.sum}>{normalizeNum(statistics.expenses)}</span>
         ) : (
@@ -165,7 +165,7 @@ function Table({ statistics, setStartDate, setEndDate }) {
         )}
       </div>
       <div className={`${s.result} ${s.income}`}>
-        Доходы:
+        Дохід:
         {statistics.length !== 0 ? (
           <span className={s.sum}>{normalizeNum(statistics.income)}</span>
         ) : (

@@ -86,7 +86,7 @@ const RegistrationForm = () => {
             <Field
               type="password"
               name="repeatPassword"
-              placeholder="Подтвердите пароль"
+              placeholder="Підтвердіть пароль"
               className={s.input}
             />
 
@@ -105,7 +105,7 @@ const RegistrationForm = () => {
             <Field
               type="text"
               name="name"
-              placeholder="Ваше имя"
+              placeholder="Ваше ім'я"
               className={s.input}
             />
 
@@ -120,10 +120,10 @@ const RegistrationForm = () => {
             />
           </label>
 
-          <Button title="Регистрация" type="submit" className={s.submitBtn} />
+          <Button title="Реєстрація'" type="submit" className={s.submitBtn} />
 
           <Button
-            title="Вход"
+            title="Вхід"
             type="button"
             typeButton="secondary"
             onClick={onLoginBtn}
